@@ -145,7 +145,7 @@
         var toponimiLayer = L.layerGroup().addTo(map);
 
         // 4. Menambahkan Layer Batas Kecamatan dengan Simbologi Graduated
-        fetch('DATA/batas_kecamatan.geojson')
+        fetch('data/Batas_Kecamatan.geojson')
             .then(response => response.json())
             .then(data => {
                 var batasKecamatanGeoJSON = L.geoJSON(data, {
@@ -194,7 +194,7 @@
             });
 
         // Menambahkan Layer Jalan
-        fetch('DATA/jalan.geojson')
+        fetch('data/Jalan.geojson')
             .then(response => response.json())
             .then(data => {
                 L.geoJSON(data, {
@@ -218,7 +218,7 @@
             });
 
         // Menambahkan Layer Sungai
-        fetch('DATA/sungai.geojson')
+        fetch('data/Sungai.geojson')
             .then(response => response.json())
             .then(data => {
                 L.geoJSON(data, {
@@ -231,7 +231,7 @@
             });
 
         // Menambahkan Layer Toponimi
-        fetch('DATA/toponimi.geojson')
+        fetch('data/Toponimi.geojson')
             .then(response => response.json())
             .then(data => {
                 L.geoJSON(data, {
